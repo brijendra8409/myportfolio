@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="p-3 flex bg-primary text-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <img src="assets/brijendra.svg" alt="brijendra logo" class="w-12">
+            <span class="font-display text-lg font-medium">BRIJENDRA</span>
+        </a>
+        <div id="nav-menu" class="hidden md:flex gap-5">
+            <a href="#" class="hover:text-red-500">Home</a>
+            <a href="#" class="hover:text-red-500">About</a>
+            <a href="#" class="hover:text-red-500">Skills</a>
+            <a href="#" class="hover:text-red-500">Projects</a>
+            <a href="#" class="hover:text-red-500">Education</a>
+           
+        </div>
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-white  text-lg"></i>
+        </button>
+        <button class="hidden  md:flex items-center gap-2 border-2 border-red-300 px-3 py-1 rounded-lg hover:text-red-300">
+            <i class="fa-solid fa-code"></i>
+            <span>Software Developer</span>
+            <i class="fa-brands fa-github"></i>
+        </button>
+        <div class="fixed bg-white inset-0 hidden" id="smallnav" >
+           <div class="flex justify-between bg-primary p-3">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img src="assets/brijendra.svg" alt="brijendra logo" class="w-12">
+                    <span class="font-display text-lg font-medium">BRIJENDRA</span>
+                </a>
+                <button class="p-2 " onclick="handleMenu()">
+                    <i class="fa-solid fa-close text-white  text-lg"></i>
+                </button>
+           </div>
+           <div id="nav-bar" class=" flex flex-col gap-3 mt-2 p-3">
+                <a href="#" class="block hover:bg-gray-50 p-2 text-black font-medium">Home</a>
+                <a href="#" class="block hover:bg-gray-50 p-2 text-black font-medium">Skills</a>
+                <a href="#" class="block hover:bg-gray-50 p-2 text-black font-medium">About</a>
+                <a href="#" class="block hover:bg-gray-50 p-2 text-black font-medium">Education</a>
+                <a href="#" class="block hover:bg-gray-50 p-2 text-black font-medium">Projects</a>
+                <div class="h-[2px] bg-gray-200"></div>
+              
+           </div>
+           <button class="flex items-center gap-2 border-2 border-red-300 px-3 py-1 rounded-lg text-red-300 m-3">
+            <i class="fa-solid fa-code"></i>
+            <span>Software Developer</span>
+            <i class="fa-brands fa-github"></i>
+        </button>
+        </div>
+    </nav>
+  </header>
+  <section class="bg-gray-200">
+    <div class="  flex flex-wrap justify-center">
+        <!-- First Box -->
+        <div class="w-full md:w-1/2  p-4">
+            <div class="bg-primary shadow-lg rounded-lg overflow-hidden">
+                <div class="p-6">
+                   <div class="rounded-full w-fit bg-red-300 p-2 mx-auto">
+                        <img src="assets/brijendra.jpg" alt="" class="w-[150px] h-[150px] rounded-full">
+                   </div>
+                    <div class="px-14 py-10">
+                        <p class="text-white md:text-center text-justify">To associate myself with an organization that provides a challenging job and an oppertunity to prove my innovative skills and dilligent work to involved in providing Software solution and network security
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center gap-4 ">
+                        <a href="" class="text-white text-4xl"><i class="fa-brands fa-github" ></i></a>
+                        
+                        <a href="" class="text-blue-500 text-4xl"><i class="fa-brands fa-linkedin" class="text-white"></i></a>
+
+                        <a href="" class="text-red-500 text-4xl"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Box -->
+        <div class="w-full md:w-1/2 p-4">
+            <div class="bg-primary shadow-lg rounded-lg overflow-hidden">
+                <div class="p-6">
+                <pre class="text-left mr-3.5">
+                    <span class="text-yellow-300">const</span> <span class="text-white">myDetails</span> <span class="text-green-500">=</span>  <span class="text-yellow-300">{</span>
+                        <label class="text-red-400">Name : </label><span class="text-green-500">Brijendra Kumar Gautam</span>,
+                        <label  class="text-red-400">Email : </label><span class="text-green-500">brijendra8408@gmail.com</span>,
+                        <label  class="text-red-400">Phone : </label><span class="text-green-500">9359882647</span>,
+                        <label  class="text-red-400">Address : </label><span class="text-green-500">Lucknow Sultanpur (U.P) ,Zipcode 222301</span>,
+                        <label  class="text-red-400">Hobbies : </label><span class="text-green-500">[</span><span class="text-yellow-300">'Eat' , 'Code', 'Insta' , 'Sleep'</span><span class="text-green-500">]</span></span>,
+                        <label  class="text-red-400">Skills : </label><span class="text-green-500">Brijendra Kumar Gautam</span>,
+                        <label  class="text-red-400">Programming : </label><span class="text-green-500">[</span><span class="text-yellow-300">'C' , 'java', 'php' , 'python'</span><span class="text-green-500">]</span>
+                        <label  class="text-red-400">Databases : </label><span class="text-green-500">[</span><span class="text-yellow-300">'Mysql' , 'Oracle', 'Mongodb'</span><span class="text-green-500">]</span>
+                        <label  class="text-red-400">Frameworks : </label><span class="text-green-500">[</span><span class="text-yellow-300">'React.js' , 'Angular', 'Bootstrap' , 'Tailwind' , 'Node' , 'Express' , 'Next.js' , 'Laravel' , 'Django' , 'SpringBoot'</span><span class="text-green-500">]</span>
+                        <label  class="text-red-400">Server Skills : </label><span class="text-green-500">[</span><span class="text-yellow-300">'AWS EC2' , 'Hostinger', 'Godady'</span><span class="text-green-500">]</span>
+                        <label  class="text-red-400">Web Dev Tools : </label><span class="text-green-500">[</span><span class="text-yellow-300">'Figma' , 'Canva', 'Photoshop' , 'vs code' , 'git and github', 'postman api testing'</span><span class="text-green-500">]</span>
+                   <span class="text-yellow-300">}</span>
+                
+                </pre>                 
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
